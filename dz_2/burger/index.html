@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burger</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="BurgerConstructor">
+    <h1>Собираем бургер</h1>
+    <h3>Выберите размер бургера</h3>
+    <div class="burgerSize container">
+        <div class="selector" type="radio" id="bigburger" data-price="100" data-calories="40">
+            <h4 class="selectorTitle">Большой бургер</h4>
+            <img class="selectorImg" src="./img/big_burger.webp" alt="Big burger">
+            <div class="selectorBox">
+                <img class="selectorCheck" src="./img/check.png" alt="">
+            </div>
+            <p>100 рублей, 40 калорий</p>
+        </div>
+        <div class="selector" type="radio" id="smallburger" data-price="50" data-calories="20">
+            <h4 class="selectorTitle">Маленький бургер</h4>
+            <img class="selectorImg" src="./img/small_burger.jpg" alt="Small burger">
+            <div class="selectorBox">
+                <img class="selectorCheck" src="./img/check.png" alt="">
+            </div>
+            <p>50 рублей, 20 калорий</p>
+        </div>
+    </div>
+    <h3>Выберите начинку</h3>
+    <div class="fillers container">
+        <div class="selector" type="radio" id="cheesefiller" data-price="10" data-calories="20">
+            <h4 class="selectorTitle">С сыром</h4>
+            <img class="selectorImg" src="./img/cheese.jpeg" alt="cheese">
+            <div class="selectorBox">
+                <img class="selectorCheck" src="./img/check.png" alt="">
+            </div>
+            <p>+10 рублей, +20 калорий</p>
+        </div>
+        <div class="selector" type="radio" id="saladfiller" data-price="20" data-calories="5">
+            <h4 class="selectorTitle">С салатом</h4>
+            <img class="selectorImg" src="./img/ajsberg.jpg" alt="Salad">
+            <div class="selectorBox">
+                <img class="selectorCheck" src="./img/check.png" alt="">
+            </div>
+            <p>+20 рублей, +5 калорий</p>
+        </div>
+        <div class="selector" type="radio" id="potatofiller" data-price="15" data-calories=10">
+            <h4 class="selectorTitle">С картошкой</h4>
+            <img class="selectorImg" src="./img/potato.webp" alt="Potato">
+            <div class="selectorBox">
+                <img class="selectorCheck" src="./img/check.png" alt="">
+            </div>
+            <p>+15 рублей, +10 калорий</p>
+        </div>
+    </div>
+    <h3>Выберите добавки</h3>
+    <div class="supplements container">
+        <div class="selector" type="checkbox" id="seasoning" data-price="15" data-calories="0">
+            <h4 class="selectorTitle">Посыпать приправой</h4>
+            <img class="selectorImg" src="./img/Seasoning.jpg" alt="Seasoning">
+            <div class="selectorBox">
+                <img class="selectorCheck" src="./img/check.png" alt="">
+            </div>
+            <p>+15 рублей, +0 калорий</p>
+        </div>
+        <div class="selector" type="checkbox" id="mayonnaise" data-price="20" data-calories="5">
+            <h4 class="selectorTitle">Полить майонезом</h4>
+            <img class="selectorImg" src="./img/mayonez.webp" alt="Mayonnaise">
+            <div class="selectorBox">
+                <img class="selectorCheck" src="./img/check.png" alt="">
+            </div>
+            <p>+20 рублей, +5 калорий</p>
+        </div>
+    </div>
+</div>
+<div class="total">
+    <h3>Ваш бургер:</h3>
+    <hr>
+    <p> Размер: <span id="finalSize">Не выбран</span> <br>
+        Начинка: <span id="filler">Не выбрана</span> <br>
+        Добавки: <span id="supplements">Не выбраны</span> <br>
+    </p>
+    <hr>
+    <p id="result">Итоговая стоимость: <span id="price">0</span> <br>
+        Кол-во калорий: <span id="calories">0</span></p>
+</div>
+</body>
+</html>
