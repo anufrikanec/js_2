@@ -38,5 +38,8 @@ body {
 }
 
 .total {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
     margin-left: 20px;
 }
