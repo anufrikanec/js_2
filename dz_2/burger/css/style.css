@@ -1,0 +1,45 @@
+body {
+    display: flex;
+}
+.container {
+    display: flex;
+    width: 1200px;
+}
+
+.selector {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.selectorImg {
+    width: 100%;
+    height: 300px;
+}
+
+.selectorBox {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: thick double #32a1ce;
+    background-color: white;
+    bottom: 20%;
+    left: 20%;
+}
+
+.selectorCheck {
+    height: 100%;
+    display: none;
+}
+
+.total {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+    margin-left: 20px;
+}
