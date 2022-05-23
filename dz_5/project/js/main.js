@@ -5,7 +5,10 @@ const app = new Vue({
     data: {
         catalogUrl: '/catalogData.json',
         products: [],
-        imgCatalog: 'https://via.placeholder.com/200x150'
+        imgCatalog: 'https://via.placeholder.com/200x150',
+        searchLine: '',
+        isVisibleCart: false,
+        cartItems: []
     },
     methods: {
         getJson(url) {
@@ -17,6 +20,14 @@ const app = new Vue({
         },
         addProduct(product) {
             console.log(product.id_product);
+        },
+        FilterGoods() {
+            // самого метода в методичке не нашел, сделал просто консоль лог
+            console.log(this.searchLine)
+        },
+        showCart() {
+            this.isVisibleCart = !this.isVisibleCart
+            console.log('cart')
         }
     },
     beforeCreate() {
@@ -30,6 +41,7 @@ const app = new Vue({
                     this.products.push(el);
                 }
             });
+
     },
     beforeMount() {
         console.log('beforeMount');

@@ -1,7 +1,7 @@
 const app = new Vue({
     el: '#app',
     data: {
-        names: ['Frodo', 'Sam', 'Meriadoc', 'Peregrin']
+        name: 'Geek'
     }
 });
 console.log(app);
@@ -34,4 +34,3 @@ function genFile(phones, names, surnames) {
 
 let rez = genFile(phones, names, surnames)
 
-console.log(rez)
